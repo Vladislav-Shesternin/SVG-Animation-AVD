@@ -1,5 +1,6 @@
 package com.example.vectoranimations
 
+import android.animation.AnimatorSet
 import android.content.Context
 import android.graphics.drawable.Animatable2
 import android.graphics.drawable.AnimatedVectorDrawable
@@ -26,6 +27,7 @@ class AvdView(
     }
 
     private fun getAttrs() {
+
         context.withStyledAttributes(attrs, R.styleable.AvdView) {
             getDrawable(R.styleable.AvdView_src_start)?.let {
                 start = it.toAVD()
