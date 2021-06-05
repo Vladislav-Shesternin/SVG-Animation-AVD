@@ -15,27 +15,65 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.vectoranimations.AvdView
-                android:id="@+id/avd_math"
+            <com.example.vectoranimations.AvdMathOperationView
+                android:id="@+id/avd_mathOp"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent=".4"
-                app:src_end="@drawable/avd_multiply_to_plus"
-                app:src_start="@drawable/avd_plus_to_multiply" />
+                app:layout_constraintWidth_percent=".4" />
 
-            <com.example.vectoranimations.OperationView
-                android:id="@+id/btn_plus"
+            <com.example.vectoranimations.ButtonMathOperationView
+                android:id="@+id/btnMathOp_plus"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="10dp"
+                app:icon="@drawable/ic_plus_24"
                 app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/avd_math"
+                app:layout_constraintHeight_percent=".15"
                 app:layout_constraintWidth_percent=".15" />
+
+            <com.example.vectoranimations.ButtonMathOperationView
+                android:id="@+id/btnMathOp_minus"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:icon="@drawable/ic_minus_24"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintHeight_percent=".15"
+                app:layout_constraintWidth_percent=".15"
+                tools:ignore="MissingConstraints" />
+
+            <com.example.vectoranimations.ButtonMathOperationView
+                android:id="@+id/btnMathOp_multiply"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:icon="@drawable/ic_multiply_24"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintHeight_percent=".15"
+                app:layout_constraintWidth_percent=".15"
+                tools:ignore="MissingConstraints" />
+
+            <com.example.vectoranimations.ButtonMathOperationView
+                android:id="@+id/btnMathOp_divide"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:icon="@drawable/ic_divide_24"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintHeight_percent=".15"
+                app:layout_constraintWidth_percent=".15"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/flow_mathOp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:constraint_referenced_ids="btnMathOp_plus, btnMathOp_minus, btnMathOp_multiply, btnMathOp_divide"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avd_mathOp" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

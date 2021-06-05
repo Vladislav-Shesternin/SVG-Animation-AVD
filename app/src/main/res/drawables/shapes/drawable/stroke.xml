@@ -7,7 +7,7 @@
         tools:width="50dp" />
 
     <stroke
-        android:width="5dp"
+        android:width="2dp"
         android:color="@color/white"
         android:dashWidth="2dp"
         android:dashGap="2dp" />

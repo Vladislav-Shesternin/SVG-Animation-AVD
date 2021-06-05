@@ -1,0 +1,29 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="center"
+                android:fillColor="#d8d8d8"
+                android:pathData="M 12 11 C 11.735 11 11.48 11.105 11.293 11.293 C 11.105 11.48 11 11.735 11 12 C 11 12.265 11.105 12.52 11.293 12.707 C 11.48 12.895 11.735 13 12 13 C 12.265 13 12.52 12.895 12.707 12.707 C 12.895 12.52 13 12.265 13 12 C 13 11.735 12.895 11.48 12.707 11.293 C 12.52 11.105 12.265 11 12 11 Z"
+                android:strokeColor="#000000"
+                android:strokeWidth="0.074199013" />
+        </vector>
+    </aapt:attr>
+    <target android:name="center">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="1000"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="M 11.293 11.293 C 11.212 11.374 11.146 11.468 11.097 11.57 C 11.034 11.703 11 11.85 11 12 C 11 12.265 11.105 12.52 11.293 12.707 C 11.361 12.775 11.438 12.833 11.521 12.878 C 11.667 12.957 11.831 13 12 13 C 12.208 13 12.409 12.935 12.577 12.817 C 12.623 12.784 12.667 12.748 12.707 12.707 C 12.87 12.545 12.971 12.331 12.995 12.105 C 12.998 12.07 13 12.035 13 12 C 13 11.735 12.895 11.48 12.707 11.293 C 12.52 11.105 12.265 11 12 11 L 12 11 C 11.735 11 11.48 11.105 11.293 11.293"
+                android:valueTo="M 11 11 C 8 11 5 11 2 11 C 2 11 2 11 2 11 C 2 11.667 2 12.333 2 13 C 5 13 8 13 11 13 C 11 16 11 19 11 22 C 11.667 22 12.333 22 13 22 C 13 19 13 16 13 13 C 16 13 19 13 22 13 C 22 12.333 22 11.667 22 11 C 19 11 16 11 13 11 C 13 8 13 5 13 2 L 11 2 C 11 5 11 8 11 11"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+</animated-vector>

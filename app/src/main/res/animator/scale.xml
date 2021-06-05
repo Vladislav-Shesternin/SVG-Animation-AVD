@@ -8,7 +8,6 @@
         android:propertyName="scaleX"
         android:repeatCount="-1"
         android:repeatMode="reverse"
-
         android:valueTo="1.5" />
 
     <objectAnimator
@@ -17,7 +16,6 @@
         android:propertyName="scaleY"
         android:repeatCount="-1"
         android:repeatMode="reverse"
-
         android:valueTo="1.5" />
 
 </set>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="AvdView">
-        <attr name="src_start" format="reference" />
-        <attr name="src_end" format="reference" />
-    </declare-styleable>
-
-</resources>
